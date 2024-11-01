@@ -14,3 +14,6 @@
 # select interpreter en vscode
 # Ejecutar normalmente en modo run o debug
 
+
+
+
