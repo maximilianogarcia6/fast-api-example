@@ -1,19 +1,13 @@
-# instalar gestor de paquetes primero
-# python3 -m pip install uv
-# pip install uv 
+# This project is an example to run a single FastAPI application
 
-# Crea la carpeta con el virtualenv (.venv)
-# uv venv 
-
-# Toma el requirements y calcula las dependencias transitivas hacia el requirements.txt
-# python -m uv pip compile requirements.in --output-file requirements.txt
-
-# instala todas las dependencias
-# python -m uv pip sync requirements.txt
-
-# select interpreter en vscode
-# Ejecutar normalmente en modo run o debug
-
-
+## How to create a python environment to run the codes for mock data creation
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install pip-tools 
+python -m piptools compile requirements.in --output-file requirements.txt
+python -m piptools sync requirements.txt
+```
 
 
